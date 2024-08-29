@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Incluyendo Font Awesome desde CDN sin el atributo integrity -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <!-- Botón regresar -->
+    <button id="prev-btn" aria-label="Regresar">
+        <i class="fas fa-arrow-circle-left"></i>
+    </button>
+
+    <!-- Catálogo -->
+    <div id="catalogo" class="catalogo">
+        <!-- Página 1 -->
+        <div id="p1" class="pagina">
+            <div class="front">
+                <div id="f1" class="front-content">
+                    <h1>Anverso 1</h1>
+                </div>
+            </div>
+            <div class="back">
+                <div id="b1" class="back-content">
+                    <h1>Reverso 1</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Página 2 -->
+        <div id="p2" class="pagina">
+            <div class="front">
+                <div id="f2" class="front-content">
+                    <h1>Anverso 2</h1>
+                </div>
+            </div>
+            <div class="back">
+                <div id="b2" class="back-content">
+                    <h1>Reverso 2</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Página 3 -->
+        <div id="p3" class="pagina">
+            <div class="front">
+                <div id="f3" class="front-content">
+                    <h1>Anverso 3</h1>
+                </div>
+            </div>
+            <div class="back">
+                <div id="b3" class="back-content">
+                    <h1>Reverso 3</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón de siguiente -->
+    <button id="next-btn" aria-label="Siguiente">
+        <i class="fas fa-arrow-circle-right"></i>
+    </button>
+</body>
+</html>
