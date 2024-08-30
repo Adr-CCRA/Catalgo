@@ -9,7 +9,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-family: sans-serif;
     background-color: powderblue;
 }
@@ -29,7 +28,6 @@ body {
     top: 0;
     left: 0;
     perspective: 1500px;
-
 }
 
 .front,
@@ -64,7 +62,7 @@ body {
 }
 
 .back-content {
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
 }
 
 /* pagina flip effect */
@@ -80,6 +78,7 @@ button {
     cursor: pointer;
     margin: 10px;
     transition: transform 0.5s;
+    z-index: 5;
 }
 
 button:focus {
@@ -106,4 +105,53 @@ i {
 
 #p3 {
     z-index: 1;
+}
+
+/* Media query para pantallas pequeñas (tablets, móviles) */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .catalogo {
+        width: 100%;
+        height: auto;
+        transform: none;
+    }
+
+    .pagina {
+        position: relative;
+        width: 100%;
+        height: auto;
+        transform-origin: center;
+    }
+
+    .front,
+    .back {
+        border-left: none;
+        backface-visibility: hidden;
+        border: none;
+    }
+
+    .flipped .front,
+    .flipped .back {
+        transform: none;
+    }
+
+    #p2,
+    #p3 {
+        display: none;
+    }
+
+    .pagina.flipped {
+        display: block;
+        position: relative;
+    }
+
+    .front-content,
+    .back-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
